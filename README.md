@@ -158,16 +158,8 @@ locust -f load-tests/locust/locustfile.py
 
 ## 🎨 Screenshots
 
-*(Optional: add screenshots of frontend UI here)*
-
 ---
 
 ## 🤝 Contributing
 
 Pull requests are welcome! Please open an issue for significant changes.
-
----
-
-## 📜 License
-
-MIT License © 2025 \[Your Name]
