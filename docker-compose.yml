@@ -22,6 +22,7 @@ services:
     container_name: book_backend
     env_file:
       - ./backend/.env
+    # You can remove this line to keep API internal only:
     ports:
       - "8000:8000"
     depends_on:
@@ -32,13 +33,13 @@ services:
   frontend:
     build: ./frontend
     container_name: book_frontend
-    env_file:
-      - ./frontend/.env
     ports:
-      - "5173:5173"
+      - "80:80"
     depends_on:
       - backend
     restart: unless-stopped
 
 volumes:
   pg_data:
+
+

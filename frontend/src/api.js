@@ -1,6 +1,6 @@
 // Centralized API layer with consistent error handling
 
-const BASE_URL = import.meta.env.VITE_BACKEND_URL?.replace(/\/$/, "") || "http://localhost:8000";
+const BASE_URL = "/api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
